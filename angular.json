@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "levelup-client"
+    }
+  },
+  "defaultProject": "levelup-client",
+  "cli": {
+    "analytics": "3e2bbca3-09a9-4784-88ad-e1465e4a23ee"
+  }
 }

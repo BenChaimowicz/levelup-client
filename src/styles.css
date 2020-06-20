@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 8bitbold;
+  src: url(assets/fonts/8bitOperatorPlusSC-Bold.ttf);
+}
+@font-face {
+  font-family: 8bit;
+  src: url(assets/fonts/8bitOperatorPlus-Regular.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 !important;
+}
+
+:root {
+  --dark-purple: #32213a;
+  --dark-blue: #383b53;
+  --electric-blue: #66717e;
+  --pale-spring: #d4d6b9;
+  --sage: #d1caa1;
+}
