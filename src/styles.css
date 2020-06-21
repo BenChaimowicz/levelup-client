@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: 8bitbold;
+  font-family: "8bitbold";
   src: url(assets/fonts/8bitOperatorPlusSC-Bold.ttf);
 }
 @font-face {
-  font-family: 8bit;
+  font-family: "8bit";
   src: url(assets/fonts/8bitOperatorPlus-Regular.ttf);
 }
 
@@ -24,4 +24,34 @@ body {
   --electric-blue: #66717e;
   --pale-spring: #d4d6b9;
   --sage: #d1caa1;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+.flex-6 {
+  flex: 6;
+}
+.flex-7 {
+  flex: 7;
+}
+.flex-8 {
+  flex: 8;
+}
+
+.titleBold {
+  font-family: "8bitbold";
+  color: var(--pale-spring);
 }

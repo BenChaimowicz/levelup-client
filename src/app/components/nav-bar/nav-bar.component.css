@@ -1,9 +1,10 @@
 .nav-bar {
   position: fixed;
   display: flex;
+  flex-direction: row;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 64px;
+  height: 82px;
   background-color: var(--dark-purple);
 }
