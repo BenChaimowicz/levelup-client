@@ -1,4 +1,22 @@
 .loginContainer {
   display: flex;
+  height: 100%;
+  width: 100%;
   margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileIcon {
+  display: flex;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  background-color: var(--sage);
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPopup {
+  position: absolute;
 }

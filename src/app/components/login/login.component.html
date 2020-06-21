@@ -1,3 +1,7 @@
-<div class="loginContainer">
-  Login Works!
+<div class="loginContainer" (mouseleave)="close()">
+  <div class="profileIcon" (mouseover)="open()">
+  </div>
+  <div *ngIf="isOpen" class="loginPopup">
+    <button class="button1">Sign In</button>
+  </div>
 </div>

@@ -51,7 +51,40 @@ body {
   flex: 8;
 }
 
+/* Fonts */
 .titleBold {
   font-family: "8bitbold";
   color: var(--pale-spring);
+}
+
+/* Buttons */
+.button1 {
+  background-color: var(--dark-blue);
+  font-family: "8bit";
+  outline: none;
+  border-radius: 10%;
+  color: var(--pale-spring);
+}
+
+.button1:hover {
+  animation: shake 0.25s infinite;
+}
+
+/* Animations */
+@keyframes shake {
+  0% {
+    transform: translate(1%, 1%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1%, -1%) rotate(-1deg);
+  }
+  50% {
+    transform: translate(1%, 1%) rotate(0deg);
+  }
+  75% {
+    transform: translate(1%, -1%) rotate(1deg);
+  }
+  100% {
+    transform: translate(-1%, 1%) rotate(-1deg);
+  }
 }
