@@ -19,4 +19,17 @@
 
 .loginPopup {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.button1 {
+  margin-bottom: 1px;
+}
+
+.pixelContainer {
+  background-color: var(--grape);
+  width: 200px;
+  display: flex;
+  justify-content: center;
 }

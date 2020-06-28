@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginService {
 
-  private readonly baseURL: string = `${environment.server}/login`;
+  private readonly baseURL: string = `${environment.server}/auth/login`;
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser$: Observable<User>;
 

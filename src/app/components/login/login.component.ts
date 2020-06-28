@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/services/login.service';
+import { Observable } from 'rxjs';
+import { User } from 'src/app/interfaces/user.interface';
 
 @Component({
   selector: 'app-login',
@@ -7,11 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  currentUser$: Observable<User>;
   isOpen = false;
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.currentUser$ = this.loginService.currentUser$;
   }
 
   open() {

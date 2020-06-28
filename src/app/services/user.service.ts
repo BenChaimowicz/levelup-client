@@ -9,14 +9,14 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private readonly baseURL: string = `${environment.server}/user`;
+  private readonly baseURL: string = `${environment.server}/users`;
 
   constructor(
     private http: HttpClient
   ) { }
 
   public register(user: User): Observable<User> {
-    return this.http.post<User>(`${this.baseURL}/create`, user);
+    return this.http.post<User>(`${environment.server}/auth/register`, user);
   }
 
   public getAll(): Observable<User[]> {

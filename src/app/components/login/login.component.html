@@ -1,7 +1,13 @@
 <div class="loginContainer" (mouseleave)="close()">
-  <div class="profileIcon" (mouseover)="open()">
+  <div class="pixelContainer">
+    <div class="profileIcon" (mouseover)="open()">
+    </div>
   </div>
   <div *ngIf="isOpen" class="loginPopup">
+    <ng-container *ngIf="currentUser$ | async as user">
+      <button class="button1">Log out</button>
+    </ng-container>
     <button class="button1">Sign In</button>
+    <button class="button1" routerLink="/register">Register</button>
   </div>
 </div>

@@ -1,0 +1,41 @@
+<div class="mainContainer maxHeight justifyCenter alignCenter">
+  <div class="card">
+    <div class="formContainer" [formGroup]="registrationForm">
+      <div class="titleBold">Register new user</div>
+      <div class="inputContainer">
+        <div class="subtitle flex-1 d-flex">User Name</div>
+        <div class="flex-1 d-flex"><input type="text" formControlName="userName"></div>
+      </div>
+      <div class="inputContainer">
+        <div class="subtitle flex-1 d-flex">Email</div>
+        <div class="flex-1 d-flex"><input type="text" formControlName="email"></div>
+      </div>
+      <div class="inputContainer">
+        <div class="subtitle flex-1 d-flex">First Name</div>
+        <div class="flex-1 d-flex"><input type="text" formControlName="firstName"></div>
+      </div>
+      <div class="inputContainer">
+        <div class="subtitle flex-1 d-flex">Last Name</div>
+        <div class="flex-1 d-flex"><input type="text" formControlName="lastName"></div>
+      </div>
+      <div class="inputContainer">
+        <div class="subtitle flex-1 d-flex">Date of birth</div>
+        <div class="flex-1 d-flex"><input type="date" [max]="today" placeholder="dd/MM/yyyy"
+            formControlName="dateOfBirth"></div>
+      </div>
+      <ng-container formGroupName="passwords">
+        <div class="inputContainer">
+          <div class="subtitle flex-1 d-flex">Password</div>
+          <div class="flex-1 d-flex"><input type="text" formControlName="password"></div>
+        </div>
+        <div class="inputContainer">
+          <div class="subtitle flex-1 d-flex">Verify Password</div>
+          <div class="flex-1 d-flex"><input type="text" formControlName="passwordVerify"></div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="buttonContainer">
+      <button class="button1" (click)="onDone()">Done</button>
+    </div>
+  </div>
+</div>

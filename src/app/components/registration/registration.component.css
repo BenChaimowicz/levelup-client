@@ -1,0 +1,34 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 20vw;
+  min-height: 15vw;
+  height: 20vw;
+  justify-content: space-evenly;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.subtitle {
+  justify-content: flex-start;
+}
+
+.button1 {
+  min-width: 120px;
+}

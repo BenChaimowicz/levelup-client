@@ -18,12 +18,34 @@ body {
   margin: 0 !important;
 }
 
+input {
+  padding: 1px 2px;
+  width: 80%;
+  margin: 0 !important;
+  border: none !important;
+  outline: none !important;
+  font-family: "8bit";
+  color: var(--dark-purple);
+  background-color: var(--sage);
+  box-shadow: 0 0 0 1px var(--sage), 2px 0 0 1px var(--sage),
+    -2px 0 0 1px var(--sage), 0 2px 0 1px var(--sage), 0 -2px 0 1px var(--sage),
+    0 0 0 3px var(--dark-blue), 1px 0 0 2px var(--dark-blue),
+    -2px 0 0 2px var(--dark-blue), 0 2px 0 2px var(--dark-blue),
+    0 -2px 0 2px var(--dark-blue);
+}
 :root {
+  --grape: #654375;
   --dark-purple: #32213a;
   --dark-blue: #383b53;
+  --rhythm-blue: #6d739c;
   --electric-blue: #66717e;
   --pale-spring: #d4d6b9;
   --sage: #d1caa1;
+}
+
+/* Flex */
+.d-flex {
+  display: flex;
 }
 
 .flex-1 {
@@ -50,11 +72,67 @@ body {
 .flex-8 {
   flex: 8;
 }
+.alignCenter {
+  align-items: center;
+}
+.justifyCenter {
+  justify-content: center;
+}
+
+/* Containers */
+.card {
+  display: flex;
+  background-color: var(--grape);
+  padding: 0.5vw;
+  box-shadow: 0 -6px 0 -2px var(--grape), 0 6px 0 -2px var(--grape),
+    0 -12px 0 -4px var(--grape), 0 12px 0 -4px var(--grape),
+    0 -18px 0 -8px var(--grape), 0 18px 0 -8px var(--grape),
+    0 -24px 0 -12px var(--grape), 0 24px 0 -12px var(--grape),
+    -2px 0 0 0 var(--dark-blue), 2px 0 0 0 var(--dark-blue),
+    0 -4px 0 0 var(--dark-blue), 0 4px 0 0 var(--dark-blue),
+    0 -10px 0 -2px var(--dark-blue), 0 10px 0 -2px var(--dark-blue),
+    0 -14px 0 -4px var(--dark-blue), 0 14px 0 -4px var(--dark-blue),
+    0 -20px 0 -8px var(--dark-blue), 0 20px 0 -8px var(--dark-blue),
+    0 -26px 0 -12px var(--dark-blue), 0 26px 0 -12px var(--dark-blue),
+    -6px 0 0 0 var(--dark-blue), 6px 0 0 0 var(--dark-blue),
+    0 0 0 4px var(--dark-blue), 0 -6px 0 2px var(--dark-blue),
+    0 6px 0 2px var(--dark-blue), 0 -10px 0 0 var(--dark-blue),
+    0 10px 0 0 var(--dark-blue), 0 -14px 0 -2px var(--dark-blue),
+    0 14px 0 -2px var(--dark-blue), 0 -18px 0 -4px var(--dark-blue),
+    0 18px 0 -4px var(--dark-blue), 0 -24px 0 -8px var(--dark-blue),
+    0 24px 0 -8px var(--dark-blue), 0 -30px 0 -12px var(--dark-blue),
+    0 30px 0 -12px var(--dark-blue);
+}
+
+.pixelContainer {
+  box-shadow: 0 0 0 6px var(--grape), 6px 0 0 3px var(--grape),
+    -6px 0 0 3px var(--grape), 0 6px 0 3px var(--grape),
+    0 -6px 0 3px var(--grape), 0 0 0 9px var(--dark-blue),
+    6px 0 0 6px var(--dark-blue), -6px 0 0 6px var(--dark-blue),
+    0 6px 0 6px var(--dark-blue), 0 -6px 0 6px var(--dark-blue);
+}
 
 /* Fonts */
+.textStd {
+  font-family: "8bit";
+  color: var(--pale-spring);
+  font-size: 10px;
+}
+
 .titleBold {
   font-family: "8bitbold";
   color: var(--pale-spring);
+}
+
+.subtitle {
+  font-size: 14px;
+  font-family: "8bit";
+  color: var(--sage);
+}
+
+/* Dimensions */
+.maxHeight {
+  height: calc(100% - 82px);
 }
 
 /* Buttons */
@@ -63,11 +141,15 @@ body {
   font-family: "8bit";
   outline: none;
   border-radius: 10%;
-  color: var(--pale-spring);
+  color: var(--sage);
+  max-height: 2vw;
+  min-height: 25px;
 }
 
 .button1:hover {
   animation: shake 0.25s infinite;
+  color: var(--pale-spring);
+  background-color: var(--rhythm-blue);
 }
 
 /* Animations */
