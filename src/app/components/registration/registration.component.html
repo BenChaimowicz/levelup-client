@@ -26,16 +26,16 @@
       <ng-container formGroupName="passwords">
         <div class="inputContainer">
           <div class="subtitle flex-1 d-flex">Password</div>
-          <div class="flex-1 d-flex"><input type="text" formControlName="password"></div>
+          <div class="flex-1 d-flex"><input type="password" formControlName="password"></div>
         </div>
         <div class="inputContainer">
           <div class="subtitle flex-1 d-flex">Verify Password</div>
-          <div class="flex-1 d-flex"><input type="text" formControlName="passwordVerify"></div>
+          <div class="flex-1 d-flex"><input type="password" formControlName="passwordVerify"></div>
         </div>
       </ng-container>
     </div>
     <div class="buttonContainer">
-      <button class="button1" (click)="onDone()">Done</button>
+      <button class="button1" (click)="onDone()" [disabled]="!registrationForm.valid">Done</button>
     </div>
   </div>
 </div>
