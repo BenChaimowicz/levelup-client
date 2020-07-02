@@ -79,6 +79,14 @@ input {
   justify-content: center;
 }
 
+.f-column {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
 /* Containers */
 .card {
   display: flex;
@@ -112,6 +120,30 @@ input {
     0 6px 0 6px var(--dark-blue), 0 -6px 0 6px var(--dark-blue);
 }
 
+.pageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rightPanel,
+.leftPanel {
+  display: flex;
+  flex: 1;
+  padding: 1.5vw;
+}
+
+.centerPanel {
+  display: flex;
+  flex: 2;
+  padding: 1.5vw;
+}
 /* Fonts */
 .textStd {
   font-family: "8bit";
@@ -130,9 +162,18 @@ input {
   color: var(--sage);
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 /* Dimensions */
 .maxHeight {
   height: calc(100% - 82px);
+}
+
+.maxWidth {
+  width: 100%;
 }
 
 /* Buttons */

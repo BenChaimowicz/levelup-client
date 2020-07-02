@@ -10,8 +10,8 @@
 .profileIcon {
   display: flex;
   border-radius: 50%;
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
   background-color: var(--sage);
   justify-content: center;
   align-items: center;
@@ -30,6 +30,7 @@
 .pixelContainer {
   background-color: var(--grape);
   width: 200px;
+  height: 44px;
   display: flex;
   justify-content: center;
 }

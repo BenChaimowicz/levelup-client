@@ -13,22 +13,15 @@
   justify-content: space-evenly;
 }
 
-.inputContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .subtitle {
   justify-content: flex-start;
 }
 
 .button1 {
   min-width: 120px;
+  max-width: 120px;
+}
+
+.card {
+  flex-direction: column;
 }

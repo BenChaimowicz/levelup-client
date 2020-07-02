@@ -1,0 +1,14 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.subtitle {
+  justify-content: flex-start;
+}
+
+.button1 {
+  min-width: 120px;
+}

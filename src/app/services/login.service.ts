@@ -28,8 +28,8 @@ export class LoginService {
     return { token: localStorage.getItem('token'), user: this.getCurrentUser() };
   }
 
-  public login(emailOrUserName: string, password: string): Observable<LoginInfo> {
-    return this.http.post<LoginInfo>(this.baseURL, { emailOrUserName, password })
+  public login(userNameOrEmail: string, password: string): Observable<LoginInfo> {
+    return this.http.post<LoginInfo>(this.baseURL, { userNameOrEmail, password })
       .pipe(map((loginInfo: LoginInfo) => {
         if (loginInfo.token) {
           this.storeInfo(loginInfo);

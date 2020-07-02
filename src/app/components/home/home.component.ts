@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from 'src/app/interfaces/user.interface';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  currentUser$: Observable<User>;
+
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.currentUser$ = this.loginService.currentUser$;
   }
 
 }
